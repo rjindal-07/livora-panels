@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYWEBPGDZ1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GYWEBPGDZ1');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livora Panels | Product Enquiry</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Supabase JS Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabaseClient.js"></script>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="enquire.css">
+
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0a0a0a">
+
+
+    <title>Enquire | Request a Wholesale Quote – Livora Panels</title>
+<meta name="description" content="Get in touch with Livora Panels for wholesale pricing, product availability, and bulk order enquiries. Fast response via WhatsApp or phone.">
+<link rel="canonical" href="https://livorapanels.com/enquire.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Enquire | Request a Wholesale Quote">
+<meta property="og:description" content="Reach out for wholesale pricing and bulk order enquiries on our PVC and WPC panel range.">
+<meta property="og:image" content="https://livorapanels.com/og-image.jpg">
+<meta property="og:url" content="https://livorapanels.com/enquire.html">
+<meta property="og:site_name" content="Livora Panels">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Enquire | Request a Wholesale Quote">
+<meta name="twitter:description" content="Reach out for wholesale pricing and bulk order enquiries.">
+<meta name="twitter:image" content="https://livorapanels.com/og-image.jpg">
+</head>
+<body class="dark-theme">
+
+  <!-- Fixed Navigation Bar -->
+  <header class="navbar">
+    <a href="homepage.html" class="logo">
+      <img src="images/Livora logo.jpeg" alt="Livora Panels Logo" class="logo-img">
+      <div class="logo-text">LIVORA <span>PANELS</span></div>
+    </a>
+    <nav class="nav-links">
+      <a href="homepage.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="product-range.html">PRODUCT RANGE</a>
+      <a href="applications.html">APPLICATIONS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <a href="enquire.html" class="btn-quote-nav active">ENQUIRE</a>
+<button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+  <i class="fa-solid fa-bars"></i>
+</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="enquire-hero">
+    <div class="hero-container">
+      <div class="category-pill">
+        <i class="fa-solid fa-clipboard-question"></i> <span>WHOLESALE & PROJECT QUOTATIONS</span>
+      </div>
+      <h1 class="hero-title">
+        REQUEST A <span>QUOTATION</span>
+      </h1>
+      <p class="hero-desc">
+        Need bulk pricing for PVC panels, fluted louvers, or UV marble sheets? Submit your query below and verify your mobile number to get instant callback options.
+      </p>
+    </div>
+  </section>
+
+  <!-- Standalone Enquiry Section -->
+  <section class="enquire-section">
+    <div class="enquire-card-container">
+      
+      <div class="enquiry-form-wrapper">
+        <h2 class="form-title">Product <span>Enquiry Form</span></h2>
+        <p class="form-sub">Please fill in all mandatory fields and our team will get back to you shortly.</p>
+
+        <div id="productContext" class="product-context hidden">
+          <i class="fa-solid fa-tag"></i>
+          <span id="productContextText"></span>
+        </div>
+
+        <form id="standaloneEnquiryForm" autocomplete="off">
+
+          <!-- Honeypot field — invisible to humans, bots auto-fill it -->
+<div class="hp-field" aria-hidden="true">
+  <label for="website">Website</label>
+  <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+</div>
+
+          <div class="form-group">
+            <label for="fullName">Full Name <span class="required">*</span></label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" id="fullName" placeholder="Enter your full name" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phoneNum">Phone Number <span class="required">*</span></label>
+            <div class="input-with-icon">
+              <span class="country-code">+91</span>
+              <input type="tel" id="phoneNum" placeholder="10-digit mobile number" maxlength="10" required>
+            </div>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" id="sameAsPhone">
+              <span>My WhatsApp number is the same as my phone number</span>
+            </label>
+          </div>
+
+          <div class="form-group " id="whatsappGroup">
+            <label for="whatsappNum">WhatsApp Number <span class="required">*</span></label>
+            <div class="input-with-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+              <input type="tel" id="whatsappNum" placeholder="10-digit WhatsApp number" maxlength="10" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city">City <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-city"></i>
+                <input type="text" id="city" placeholder="Your city" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="state">State <span class="required">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <input type="text" id="state" placeholder="Your state" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email <span class="optional">(optional)</span></label>
+            <div class="input-with-icon">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" id="email" placeholder="you@example.com">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message / Product Query <span class="required">*</span></label>
+            <div class="input-with-icon align-top">
+              <i class="fa-solid fa-comment-dots"></i>
+              <textarea id="message" rows="4" placeholder="Mention product type, estimated quantity (e.g. 50 panels), or project location..." required></textarea>
+            </div>
+          </div>
+
+          <button type="submit" id="submitEnquiryBtn" class="btn-primary-gold">
+            <span>Submit Enquiry</span> <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+          <div id="formFeedback" class="form-feedback hidden"></div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Complete Dark Styled Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <img src="images/Livora logo.jpeg" alt="Livora Panels Logo" class="logo-img">
+          <div class="logo-text">LIVORA <span>PANELS</span></div>
+        </div>
+        <p class="footer-text">
+          Livora Panels is a trusted wholesale supplier, importer, and distributor of premium PVC wall panels, Fluted louvers, and decorative surface finishes.
+        </p>
+        <div class="footer-trust">
+          <span><i class="fa-solid fa-shield-cat"></i> Long-Lasting Quality</span>
+          <span><i class="fa-solid fa-truck-fast"></i> Wholesale Supply</span>
+          <span><i class="fa-solid fa-clock"></i> Fast Delivery</span>
+        </div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/livora_panels" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=livorapanels@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Product Range</h4>
+        <ul class="footer-links">
+          <li><a href="product-range.html?category=wall-pvc"><i class="fa-solid fa-angle-right"></i> Wall Panels</a></li>
+          <li><a href="product-range.html?category=ceiling-pvc"><i class="fa-solid fa-angle-right"></i> Ceiling Panels</a></li>
+          <li><a href="product-range.html?category=uv"><i class="fa-solid fa-angle-right"></i> UV Marble Sheets</a></li>
+          <li><a href="product-range.html?category=fluted-pvc"><i class="fa-solid fa-angle-right"></i> Fluted Louvers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="homepage.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="applications.html"><i class="fa-solid fa-angle-right"></i> Applications</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4 class="footer-heading">Get in Touch</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><strong>Head Office</strong><p>Opp. Raunak Hotel, Pinjore Kalka Road, Pinjore, Distt. Panchkula, India</p></div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div><strong>Call Us</strong><p>+91 97814 10300</p><p>+91 77175 77000</p></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+  <p>2026 Livora Panels<span class="tm">&trade;</span>. All Rights Reserved.</p>
+</div>
+  </footer>
+
+  <script src="enquire.js"></script>
+  <script src="nav-toggle.js"></script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYWEBPGDZ1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GYWEBPGDZ1');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livora Panels | Applications & Catalogues</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Supabase JS Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabaseClient.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="applications.css">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0a0a0a">
+
+
+  <title>Applications | Where to Use Our Panels – Livora Panels</title>
+<meta name="description" content="See how Livora Panels' PVC and WPC panels are used across residential, commercial, and interior design applications. Download catalogues by category.">
+<link rel="canonical" href="https://livorapanels.com/applications.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Applications | Where to Use Our Panels">
+<meta property="og:description" content="Discover real-world applications of Livora's PVC and WPC panels across walls, ceilings, and interior spaces.">
+<meta property="og:image" content="https://livorapanels.com/og-image.jpg">
+<meta property="og:url" content="https://livorapanels.com/applications.html">
+<meta property="og:site_name" content="Livora Panels">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Applications | Where to Use Our Panels">
+<meta name="twitter:description" content="Discover real-world applications of Livora's PVC and WPC panels.">
+<meta name="twitter:image" content="https://livorapanels.com/og-image.jpg">
+</head>
+<body class="dark-theme">
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <a href="homepage.html" class="logo">
+      <img src="images/Livora logo.jpeg" alt="Livora Panels Logo" class="logo-img">
+      <div class="logo-text">LIVORA <span>PANELS</span></div>
+    </a>
+    <nav class="nav-links">
+      <a href="homepage.html">HOME</a>
+      <a href="about.html">ABOUT US</a>
+      <a href="product-range.html">PRODUCT RANGE</a>
+      <a href="applications.html" class="active">APPLICATIONS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <a href="enquire.html" class="btn-quote-nav">ENQUIRE</a>
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation">
+  <i class="fa-solid fa-bars"></i>
+</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="applications-hero">
+    <div class="hero-container">
+      <div class="category-pill">
+        <i class="fa-solid fa-star"></i> <span>DOWNLOAD APPLICATION GUIDES & PDF CATALOGUES</span>
+      </div>
+      <h1 class="hero-title">
+        CATEGORY <span>CATALOGUES & SPECS</span>
+      </h1>
+      <p class="hero-desc">
+        Select a category tab below to view and download official specification sheets, brochures, and technical application PDFs.
+      </p>
+    </div>
+  </section>
+
+  <!-- Category Filter Tabs & PDF Grid Section -->
+  <section class="applications-section">
+    <div class="filter-wrapper">
+      <div class="category-filter">
+        
+        <!-- ALL PANELS -->
+        <div class="filter-item">
+          <button class="app-filter-btn active" data-category="all">
+            <i class="fa-solid fa-border-all"></i> All Panels
+          </button>
+        </div>
+
+        <!-- 1. MERGED: WALL & CEILING PVC (WITH DROPDOWN) -->
+        <div class="filter-item dropdown-item">
+          <button class="app-filter-btn" data-category="wall-ceiling-pvc">
+            <i class="fa-solid fa-border-top-left"></i> Wall & Ceiling PVC <i class="fa-solid fa-chevron-down caret"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#" class="sub-filter" data-category="wall-ceiling-pvc" data-subcategory="Ceiling and Hotstamp">Ceiling and Hotstamp</a>
+            <a href="#" class="sub-filter" data-category="wall-ceiling-pvc" data-subcategory="Royal and slim">Royal & Slim</a>
+            <a href="#" class="sub-filter" data-category="wall-ceiling-pvc" data-subcategory="2 Groove">2 Groove</a>
+            <a href="#" class="sub-filter" data-category="wall-ceiling-pvc" data-subcategory="PVC Superheavy">PVC Superheavy</a>
+          </div>
+        </div>
+
+        <!-- 2. FLUTED PVC (WITH DROPDOWN) -->
+        <div class="filter-item dropdown-item">
+          <button class="app-filter-btn" data-category="fluted-pvc">
+            <i class="fa-solid fa-bars"></i> Fluted PVC <i class="fa-solid fa-chevron-down caret"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#" class="sub-filter" data-category="fluted-pvc" data-subcategory="10 inch 8 step">10 inch 8 step</a>
+            <a href="#" class="sub-filter" data-category="fluted-pvc" data-subcategory="10 inch 7 step">10 inch 7 step</a>
+            <a href="#" class="sub-filter" data-category="fluted-pvc" data-subcategory="10 inch 4 step">10 inch 4 step</a>
+            <a href="#" class="sub-filter" data-category="fluted-pvc" data-subcategory="12 inch 9 step">12 inch 9 step</a>
+            <a href="#" class="sub-filter" data-category="fluted-pvc" data-subcategory="12 inch 15 step">12 inch 15 step</a>
+          </div>
+        </div>
+
+        <!-- 3. WPC (WITH DROPDOWN) -->
+        <div class="filter-item dropdown-item">
+          <button class="app-filter-btn" data-category="wpc">
+            <i class="fa-solid fa-layer-group"></i> WPC <i class="fa-solid fa-chevron-down caret"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#" class="sub-filter" data-category="wpc" data-subcategory="23mm">23mm</a>
+            <a href="#" class="sub-filter" data-category="wpc" data-subcategory="17mm">17mm</a>
+            <a href="#" class="sub-filter" data-category="wpc" data-subcategory="15mm">15mm</a>
+          </div>
+        </div>
+
+        <!-- 4. UV (WITH DROPDOWN) -->
+        <div class="filter-item dropdown-item">
+          <button class="app-filter-btn" data-category="uv">
+            <i class="fa-solid fa-gem"></i> UV <i class="fa-solid fa-chevron-down caret"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="#" class="sub-filter" data-category="uv" data-subcategory="Marble sheets">Marble Sheets</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Active Filter Indicator Bar -->
+    <div class="active-filter-bar">
+      Showing: <span id="activeFilterLabel">All Panels</span>
+    </div>
+
+    <!-- PDF Cards Grid -->
+    <div class="applications-container">
+      <div class="applications-grid" id="pdfGrid">
+        <div class="loading-state">
+          <i class="fa-solid fa-spinner fa-spin"></i> Loading PDF Catalogues...
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <!-- Brand Summary Column -->
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <img src="images/Livora logo.jpeg" alt="Livora Panels Logo" class="logo-img">
+          <div class="logo-text">LIVORA <span>PANELS</span></div>
+        </div>
+        <p class="footer-text">
+          Livora Panels is a trusted wholesale supplier, importer, and distributor of premium PVC wall panels, Fluted louvers, and decorative surface finishes.
+        </p>
+        <div class="footer-trust">
+          <span><i class="fa-solid fa-shield-cat"></i> Long-Lasting Quality</span>
+          <span><i class="fa-solid fa-truck-fast"></i> Wholesale Supply</span>
+          <span><i class="fa-solid fa-clock"></i> Fast Delivery</span>
+        </div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/livora_panels" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=livorapanels@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Product Range Column -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Product Range</h4>
+        <ul class="footer-links">
+          <li><a href="product-range.html?category=wall-ceiling-pvc"><i class="fa-solid fa-angle-right"></i> Wall & Ceiling Panels</a></li>
+          <li><a href="product-range.html?category=uv"><i class="fa-solid fa-angle-right"></i> UV Marble Sheets</a></li>
+          <li><a href="product-range.html?category=fluted-pvc"><i class="fa-solid fa-angle-right"></i> Fluted Louvers</a></li>
+          <li><a href="product-range.html?category=wpc"><i class="fa-solid fa-angle-right"></i> WPC Panels</a></li>
+          <li><a href="product-range.html" class="view-all-link">View All Products &rarr;</a></li>
+        </ul>
+      </div>
+
+      <!-- Applications Column -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Applications</h4>
+        <ul class="footer-links">
+          <li><a href="applications.html"><i class="fa-solid fa-angle-right"></i> PDF Catalogues</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Column -->
+      <div class="footer-col contact-col">
+        <h4 class="footer-heading">Get in Touch</h4>
+        
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Head Office</strong>
+            <p>Opp. Raunak Hotel, Pinjore Kalka Road, Pinjore, Distt. Panchkula, India</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <strong>Call Us</strong>
+            <p>+91 97814 10300</p>
+            <p>+91 77175 77000</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <strong>Email Us</strong>
+            <p>livorapanels@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+  <p>2026 Livora Panels<span class="tm">&trade;</span>. All Rights Reserved.</p>
+</div>
+  </footer>
+
+  <script src="applications.js"></script>
+  <script src="nav-toggle.js"></script>
+</body>
+</html>

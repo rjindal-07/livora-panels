@@ -1,0 +1,659 @@
+/* ==========================================
+   GLOBAL RESET & DARK THEME BASE
+   ========================================== */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #12100e;
+  color: #e0d8cf;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   NAVBAR STYLES
+   ========================================== */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 5%;
+  background-color: #171412;
+  border-bottom: 1px solid #28231e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-family: 'Cinzel', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #c5a059;
+}
+
+.logo-text span {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #a0958a;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #c5a059;
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #c5a059;
+}
+
+.btn-quote-nav {
+  border: 1px solid #c5a059;
+  color: #ffffff;
+  padding: 8px 22px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.btn-quote-nav:hover {
+  background-color: #c5a059;
+  color: #12100e;
+}
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+.applications-hero {
+  padding: 70px 20px 40px;
+  text-align: center;
+  background: radial-gradient(circle at top, #26201b 0%, #12100e 80%);
+}
+
+.category-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  background: rgba(197, 160, 89, 0.08);
+  border: 1px solid #c5a059;
+  color: #c5a059;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #8c827a;
+  letter-spacing: 2px;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+.hero-title span {
+  color: #c5a059;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero-desc {
+  color: #d1c7bc;
+  font-size: 0.95rem;
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   CATEGORY FILTER TABS & DROPDOWNS
+   ========================================== */
+.applications-section {
+  padding: 20px 5% 60px;
+}
+
+.filter-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: #1a1714;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #2e2823;
+}
+
+.filter-item {
+  position: relative;
+}
+
+.app-filter-btn {
+  background-color: transparent;
+  color: #a0958a;
+  border: 1px solid transparent;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.app-filter-btn:hover,
+.app-filter-btn.active {
+  background-color: #26201b;
+  color: #c5a059;
+  border-color: #c5a059;
+}
+
+.app-filter-btn .caret {
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  min-width: 200px;
+  background-color: #1a1714;
+  border: 1px solid #3a322b;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  z-index: 100;
+  padding: 8px 0;
+}
+
+.dropdown-item:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item:hover .caret {
+  transform: rotate(180deg);
+}
+
+.sub-filter {
+  display: block;
+  padding: 10px 18px;
+  color: #d1c7bc;
+  text-decoration: none;
+  font-size: 0.82rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sub-filter:hover,
+.sub-filter.active-sub {
+  background-color: #26201b;
+  color: #c5a059;
+}
+
+/* Active Filter Label Bar */
+.active-filter-bar {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #a0958a;
+  margin-bottom: 30px;
+}
+
+.active-filter-bar span {
+  color: #c5a059;
+  font-weight: 700;
+}
+
+/* ==========================================
+   PDF GRID & CARDS STYLING
+   ========================================== */
+.applications-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.pdf-card {
+  background-color: #1a1714;
+  border: 1px solid #2e2823;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.pdf-card:hover {
+  transform: translateY(-5px);
+  border-color: #c5a059;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.pdf-icon-wrapper {
+  font-size: 2.2rem;
+  color: #e74c3c;
+  margin-bottom: 12px;
+}
+
+.pdf-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.pdf-category-tag {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #c5a059;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.pdf-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+
+.pdf-desc {
+  color: #a0958a;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+}
+
+.pdf-file-size {
+  font-size: 0.8rem;
+  color: #776e65;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-download-pdf {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: rgba(197, 160, 89, 0.1);
+  border: 1px solid #c5a059;
+  color: #c5a059;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-download-pdf:hover {
+  background-color: #c5a059;
+  color: #12100e;
+}
+
+.empty-state, .loading-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 50px 0;
+  color: #a0958a;
+}
+
+/* ==========================================
+   FOOTER STYLES
+   ========================================== */
+.site-footer {
+  background-color: #0d0c0a;
+  border-top: 1px solid #28231e;
+  padding: 60px 5% 20px;
+  color: #a0958a;
+  margin-top: 80px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-trust {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #c5a059;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-links a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #1e1a17;
+  border: 1px solid #332c25;
+  color: #c5a059;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  background: #c5a059;
+  color: #12100e;
+}
+
+.footer-heading {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #a0958a;
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a:hover {
+  color: #c5a059;
+}
+
+.contact-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 0.88rem;
+}
+
+.contact-item i {
+  color: #c5a059;
+  margin-top: 4px;
+}
+
+.contact-item strong {
+  color: #ffffff;
+  display: block;
+}
+
+.contact-item p {
+  margin: 2px 0 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #1a1714;
+  margin-top: 50px;
+  padding-top: 20px;
+  font-size: 0.8rem;
+  color: #665f57;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #c5a059;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #171412;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px 6%;
+    border-bottom: 1px solid #28231e;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+/* ==========================================
+   MOBILE POLISH
+   ========================================== */
+@media (max-width: 768px) {
+  .applications-hero {
+    padding: 50px 16px 30px;
+  }
+
+  .category-pill {
+    font-size: 0.68rem;
+    padding: 5px 14px;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+  }
+
+  .hero-desc {
+    font-size: 0.9rem;
+  }
+
+  .applications-section {
+    padding: 15px 16px 40px;
+  }
+
+  .category-filter {
+    padding: 8px;
+    gap: 6px;
+    justify-content: center;
+  }
+
+  .app-filter-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .dropdown-menu {
+    min-width: 170px;
+  }
+
+  .active-filter-bar {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+
+  .applications-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pdf-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .app-filter-btn i {
+    display: none;
+  }
+
+  .pdf-title {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+/* Tablet squeeze fix: tighten nav spacing in the gap between
+   full desktop width and the hamburger breakpoint */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-links {
+    gap: 12px;
+    flex-wrap: nowrap;
+  }
+
+  .nav-links a {
+    font-size: 0.7rem;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+  }
+
+  .logo-text {
+    font-size: 0.95rem;
+  }
+
+  .btn-quote-nav {
+    padding: 6px 12px;
+    font-size: 0.68rem;
+    white-space: nowrap;
+  }
+
+  .navbar {
+    padding: 14px 3%;
+  }
+}
+
+.tm {
+  font-size: 1.1em;
+  vertical-align: super;
+  margin-left: 2px;
+}

@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.zip
+
+# Source catalogue PDFs (already uploaded to Supabase Storage — not needed in repo)
+images/Fluted Panels/
+images/UV panels/
+images/Wall & PVC Panels/
+images/WPC/
+Merged PDFs/
+
+# Unzipped product photos (already uploaded to Supabase Storage — not needed in repo)
+images/livora_product_images/
+livora_product_images/
