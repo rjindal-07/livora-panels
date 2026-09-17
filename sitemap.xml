@@ -6,27 +6,27 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://livorapanels.com/product-range.html</loc>
+    <loc>https://livorapanels.com/product-range</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://livorapanels.com/applications.html</loc>
+    <loc>https://livorapanels.com/applications</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://livorapanels.com/enquire.html</loc>
+    <loc>https://livorapanels.com/enquire</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://livorapanels.com/about.html</loc>
+    <loc>https://livorapanels.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://livorapanels.com/contact.html</loc>
+    <loc>https://livorapanels.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

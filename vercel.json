@@ -1,5 +1,9 @@
 {
+  "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/homepage.html" }
+    {
+      "source": "/",
+      "destination": "/homepage.html"
+    }
   ]
 }
